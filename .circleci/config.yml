@@ -41,7 +41,7 @@ jobs:
       # run tests! and gen code coverage
       - run:
           name: Generate JaCoCo report
-          command: ./gradlew -PciBuild=true jacocoTestReport
+          command: chmod +x ./gradlew -PciBuild=true jacocoTestReport
 
       - run:
           name: Save test results
